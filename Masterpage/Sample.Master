@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sample.Master.cs" Inherits="Masterpage.Simple" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:sandybrown">
+    <div>
+   <nav style="background-color:peachpuff" align="center" >
+       <br /><br /> <b>&nbsp
+               <a class="nav-link active" href="Index.aspx">Home</a> &nbsp&nbsp
+               <a class="nav-link active" href="../student/Student_Reg.aspx">Student Registration</a> &nbsp&nbsp
+               <a class="nav-link active" href="../faculty/Faculty_Reg.aspx">Faculty Registration</a> &nbsp&nbsp
+           <a class="nav-link active" href="../Login.aspx">Login</a>&nbsp&nbsp
+       </b><br /><br />
+       <br />
+   </nav> 
+        </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                <h1>Welcome to College portal</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
